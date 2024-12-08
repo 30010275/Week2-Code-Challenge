@@ -1,0 +1,112 @@
+/* Default light mode styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 20px;
+  background-color: white;
+  color: #333;
+  background-image: url('https://images.pexels.com/photos/1157166/pexels-photo-1157166.jpeg'); /* Shopping cart background */
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: greenyellow;
+}
+/* BUTTON EDITS*/
+
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#item-input, #price-input {
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+Z
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: plum;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(170, 238, 218);
+}
+
+#shopping-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#shopping-list li {
+  padding: 10px;
+  background-color: white;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+#shopping-list li.purchased {
+  text-decoration: line-through;
+  background-color: white;
+  color: RED;
+}
+
+
+
+#shopping-list li span.price {
+  font-weight: bold;
+  margin-left: 10px;
+  color: blue;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode #controls input,
+body.dark-mode #controls button {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode #shopping-list li {
+  background-color: black;
+  color: white;
+  border-color: #444;
+}
+
+body.dark-mode #shopping-list li.purchased {
+  background-color: #404040;
+  color: #8bc34a;
+}
+
+body.dark-mode #shopping-list li span.price {
+  color: #4caf50;
+}
+
+body.dark-mode button {
+  background-color: #333;
+}
+
+body.dark-mode button:hover {
+  background-color: #444;
+}
